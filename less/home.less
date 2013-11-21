@@ -1,0 +1,72 @@
+.home {
+	.table {
+		.heading {
+			background: @dark;
+			font-size: 10px;
+			font-weight: 600;
+			color: white;
+		}
+
+		.heading, .row {
+			padding: 10px;
+
+			span {
+				text-align: center;
+				width: 15%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			span:first-child {
+				text-align: left;
+				width: 60%;
+			}
+			span:last-child {
+				text-align: left;
+				width: 20%;
+			}
+			
+		}
+
+		a, a:visited, a:hover {
+			color: @light;
+			font-weight: 700;
+		}
+
+		.row {
+			border-bottom: 1px solid #efefef
+		}
+		
+
+		.read {
+			background: url('./assets/forum_read.gif') no-repeat;
+
+			&.badge-important {
+				background: url('./assets/forum_unread.gif') no-repeat;
+			}
+
+			background-position: 0 3px;
+			padding-left: 40px;
+			height: 33px;
+
+			div {
+				font-size: 12px;
+			}
+		}
+		.poster {
+			font-size: 12px;
+			a, a:visited, a:hover {
+				color: @light;
+			}
+			.post {
+				display: none;
+			}
+			.post:first-child {
+				display: block;
+			}
+			.timeago {
+				width: 100%!important;
+			}
+		}
+	}
+	
+}

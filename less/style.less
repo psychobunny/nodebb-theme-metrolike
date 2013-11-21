@@ -1,0 +1,341 @@
+@dark: #545454;
+@light: rgb(230, 6, 133);
+@gray: #efefef;
+
+.purple {
+	background: #8C0095;
+
+	&:hover {
+		background: #A700AE;
+	}
+}
+
+
+.darkpurple {
+	background: #5133AB;
+
+	&:hover {
+		background: #643EBF;
+	}
+}
+
+
+.teal {
+	background: #008299;
+
+	&:hover {
+		background: #00A0B1;
+	}
+}
+
+
+.orange {
+	background: #D24726;
+
+	&:hover {
+		background: #DC572E;
+	}
+}
+
+
+.blue {
+	background: #2672EC;
+
+	&:hover {
+		background: #2E8DEF;
+	}
+}
+
+
+.skyblue {
+	background: #094AB2;
+
+	&:hover {
+		background: #0A5BC4;
+	}
+}
+
+
+.red {
+	background: #AC193D;
+
+	&:hover {
+		background: #BF1E4B;
+	}
+}
+
+
+.green {
+	background: #008A00;
+
+	&:hover {
+		background: #00A600;
+	}
+}
+
+
+.yellow {
+	background: #e8be1b;
+
+	&:hover {
+		background: #f7d240;
+	}
+}
+
+
+html {
+	overflow-y: scroll;
+}
+
+html, body {
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	height: 100%;
+}
+
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: @light;
+	font-weight: 600;
+}
+
+button {
+	color: #4d4d4d;
+	background-color: #e0e0e0;
+	border: 0;
+	text-transform: uppercase;
+	padding: 7px;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+ 
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+button:hover {
+    background-color: #e60685;
+	color: #f9f9f9;
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container {
+	min-height: 100%;
+	position: relative;
+}
+
+#content {
+	padding: 40px 0 90px 0;
+	.container {
+		padding: 0 10px 0 10px;
+	}
+}
+
+#postWindow {
+	display: none;
+	width: 100%;
+
+	textarea {
+		width: 100%;
+	}
+
+	.composerHeader {
+		margin-bottom: 10px;
+		width: 100%;
+
+		button {
+			float: left;
+			margin-right: 10px;
+		}
+		span {
+			overflow:hidden;
+    		display:block;
+
+    		input {
+				float: left;
+				border-width: 0 0 1px 0;
+				border-color: black;
+				height: 26px;
+				width: 100%;
+			}
+		}
+		
+	}
+}
+
+.header {
+	background: @dark;
+	color: white;
+	padding: 30px 0 30px 0;
+
+	.container {
+		padding: 0 10px 0 10px;
+	}
+
+	.site-details {
+		display: inline-block;
+		color: white;
+		margin-left: 20px;
+
+		h1 {
+			font-size: 22px;
+			margin: 0;
+		}
+
+		span {
+
+		}
+	}
+
+
+}
+
+.menu {
+	background: @light;
+	padding: 15px 0 15px 0;
+
+	.container {
+		padding: 0 10px 0 10px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			margin-right: 15px;
+			a {
+				color: white;
+			}
+		}
+	}
+
+	#logout-link {
+		cursor: pointer;
+	}
+}
+
+
+footer {
+	background: #333;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	color: #dedede;
+	a, a:visited, a:hover {
+		color: white;
+	}
+	text-align: center;
+	.container {
+		padding: 10px;
+	}
+}
+
+
+#toasterWindow {
+	position: fixed;
+	right: 0px;
+	top: 156px;
+
+		
+	.toast {
+		width: 500px;
+		height: 55px;
+		padding: 15px;
+		color: white;
+		cursor: pointer;
+		margin-bottom: 10px;
+		position: relative;
+		right: -100%;
+		display: none;
+
+		&.success {
+			.teal;
+		}
+
+		&.warning {
+			.yellow;
+		}
+
+		&.info {
+			.blue;
+		}
+
+		&.danger {
+			.red;
+		}
+
+		-webkit-transition: right 0.25s cubic-bezier(0.790, 0.035, 0.120, 0.955);
+		   -moz-transition: right 0.25s cubic-bezier(0.790, 0.035, 0.120, 0.955);
+	         -o-transition: right 0.25s cubic-bezier(0.790, 0.035, 0.120, 0.955);
+	            transition: right 0.25s cubic-bezier(0.790, 0.035, 0.120, 0.955);
+
+	    &.active {
+	    	right: 0%;
+	    }
+	}
+
+}
+
+
+
+.login, .register {
+	background: @gray;
+	padding: 20px 0!important;
+	color: #333;
+	h2 {
+		font-weight: 300;
+	}
+	form {
+		margin-left: 20px;
+	}
+	.labels {
+		float: left;
+		min-width: 180px;
+		height: 300px;
+		margin-left: 10px;
+
+		label {
+			margin-bottom: 17px;
+			display: inline-block;
+		}
+	}
+	input {
+		margin-bottom: 10px;
+	}
+}
+
+
+// BS3 "shims"
+.hidden {
+	display: none!important;
+	visibility: hidden!important;
+}
+
+.hide {
+	display: none!important;
+}

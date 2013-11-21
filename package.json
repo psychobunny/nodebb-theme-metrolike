@@ -1,0 +1,36 @@
+{
+  "name": "nodebb-theme-metrolike",
+  "version": "0.0.1",
+  "description": "metrolike theme for NodeBB",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-theme-metrolike"
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "themes",
+    "phpbb",
+    "metrolike"
+  ],
+  "contributors": [
+    {
+      "name": "psychobunny",
+      "email": "psycho.bunny@hotmail.com",
+      "url": "https://github.com/psychobunny"
+    }
+  ],
+  "license": "GPLv3 or later",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-theme-metrolike/issues"
+  },
+  "readme": "nodebb-theme-metrolike\r\n====================\r\n\r\nMetrolike Theme for NodeBB - a port of the metrolike theme from phpBB3.\r\n\r\n\r\n## Credits\r\n\r\nsec14 - http://secl4.deviantart.com/art/metrolike-1-0-1-phpBB-style-405098783\r\n",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-theme-metrolike@0.0.1",
+  "dist": {
+    "shasum": "3b668c2ce4d0c0c65ddc5ff303605851cdda96a4"
+  },
+  "_from": "nodebb-theme-metrolike@0.0.1",
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-metrolike/-/nodebb-theme-metrolike-0.0.1.tgz"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "nodebb-theme-metrolike",
+    "name": "NodeBB Metrolike Theme",
+    "description": "Metrolike Theme for NodeBB - a port of the metrolike theme from phpBB3",
+    "url": "https://github.com/designcreateplay/nodebb-theme-metrolike",
+	"staticDir": "static",
+    "templates": "static/templates",
+    "screenshot": null
+}
