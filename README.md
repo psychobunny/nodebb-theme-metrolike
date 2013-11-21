@@ -1,7 +1,7 @@
 nodebb-theme-metrolike
 ====================
 
-Metrolike Theme for NodeBB - a port of the metrolike theme from phpBB3.
+Metrolike Theme for [NodeBB](http://www.nodebb.org) - a port of the metrolike theme from phpBB3. See [development thread](http://try.nodebb.org/topic/210/nodebb-creating-your-own-themes) for more information.
 
 ## Screenshots
 
